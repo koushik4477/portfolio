@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family:'josefin Sans',sans-serif;
+            box-sizing: border-box;
+        }
+        
+        .header{
+            height: 100vh;
+            width: 100%;
+            background-image: url(k.jpg);
+            background-position: center;
+            background-size: cover;
+           
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2% 2% 50px;
+        }
+        .logo{
+            font-weight: 3000;
+            color: rgb(245, 239, 239);
+            padding-left: 10px;
+            cursor: pointer;
+        }
+        .logo span{
+            color: tomato;
+        }
+        .nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding-left: 80px;
+        }
+        .tab{
+            align-items: center;
+            margin-left: 15%;
+            
+        }
+        nav ul li a{
+            color: antiquewhite;
+            text-decoration: none;
+            font-weight:bolder;
+            font-size: larger; 
+        }
+        nav ul li a:hover{
+            color: tomato;
+            transition: .4s;
+        }
+        .btn{
+           background-color: rgb(224, 24, 64);
+           color: aliceblue;
+           text-decoration: none;
+           border: 2px solid transparent; 
+           border-radius: 30px;
+        }
+        .btn:hover{
+            background-color: aliceblue;
+            color: #000;
+            transition: transform .4s;
+        }
+        .name{
+            padding-top: 10%;
+            padding-left: 8%;
+            color: aliceblue;
+        }
+        .name h1{
+            padding-top: 10px;
+            font-weight: 3000;
+        }
+        .name h3 span{
+            color: tomato;
+        }
+        .name h3{
+            padding-top:10px; 
+            color: aliceblue;
+            padding-bottom: 2%;
+            font-size: 50px;
+            padding-left: 20px;
+            
+        }
+        .name h5{
+            padding-left: 2%;
+            color: aliceblue;
+            font-size: larger;
+        }
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         padding-top: 10%;
+            background-color: #000;
+            width: 100%;
+            height: 100%;
+            color: aliceblue;
+
+        }
+        .about div h1{
+            width: fit-content;
+            margin-left: 50%;
+            color:white;
+            font-size: 50px;
+        }
+        .about div p{
+            font-weight: 200;
+            margin: 5% 5%;
+            line-height: 40px;
+            font-size: 25px;  
+        }
+        .img{
+            border: 2px solid transparent;
+            border-radius: 120px;
+        }
+        .about div h2{
+            margin-left: 5%;
+            padding-top: 5%;
+            font-weight: 3000;
+            font-size: 35px;
+        }
+        .about div h2 span{
+            color: tomato;
+        }
+        .edu{
+            background-color: #000;
+            height: auto;
+            width: auto;
+            color: aliceblue;
+            h2{
+                padding-top: 50px;
+                font-size: 50px;
+                padding-left: 42%;
+            }     
+        }
+        .det span{
+                display: inline-block;
+                margin-top: 5%;
+                margin-inline-start: 7%;
+                border: 3px solid transparent;
+                border-radius: 30px;
+                border-color: antiquewhite;
+                padding: 1.5%;
+                overflow: hidden;
+                b{
+                    font-size: 35px;
+                    font-weight: bolder;
+                }
+                p{
+                    font-size: 25px;
+                }
+              
+            }
+            .skills{
+                background-color: #000;
+                color: aliceblue;
+                padding-bottom: 5%;
+            }
+            .skills h2{
+                padding: 5% 40% 5% 45%;
+                font-size: 70px;
+            }
+            .skills h2 span{
+                color: tomato;
+            }
+            .skills h3{
+                font-weight: bolder;
+                padding-left: 5%;
+                font-size: 30px;
+            }
+            .sk ul li{
+               display: inline-block;
+            }
+            .sk ul li h5{
+                font-size: 25px;
+                text-align: center;
+            }
+            .sk ul li img{
+                position: relative;
+                width: 70px;
+                height: 70px;
+                margin: 40px 70px 40px 70px;
+                padding-left: 5%;
+            }
+            .footer{
+                background-color: #2d2b2b;
+                height: 10vh;
+                display: flex;
+                justify-content: space-around;
+               
+            }
+            .footer a{
+                display: inline-block;
+                border: 2px solid transparent;
+                border-radius: 25px;
+                background-color: tomato;
+                color: white;
+                text-decoration: none;
+                font-weight: bolder;
+                padding-top: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-inline-start: 2px;
+                margin-right: 50%;
+            }
+            .footer h4{
+                color: antiquewhite;
+                font-size: 25px;
+                font-weight: bolder;
+                padding-left: 200px;
+                padding-top: 20px;
+                margin-left: 3%;
+                
+            }
+            .footer a:hover{
+                color: black;
+                background-color: beige;
+                transition: .4s;
+            }
+          .dude span{
+            justify-content: space-between;
+          }
+          .code{
+            padding-left: 25%;
+          }
+            
+            
+        
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h2 class="logo">Port<span>folio</span></h2>
+            <ul class="tab">
+                <li><a href="#">Home</a></li>
+                <li><a href="#me">About me</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#foot">Contact me</a></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </nav>
+        <div class="name">
+            <h1>Hello,My name is</h1>
+            <h3>Krishna<span> koushik</span></h3>
+            <h5>I'am a Frontend Developer</h5>
+        </div>
+    </header>
+    <section class="about" id="me">
+         <div>
+            <h1 class="ab">About<span> Me</span></h1>
+            <h2>Designer And <span>Developer</span></h2>
+            <p>Hello! I'm koushik, a passionate software developer currently studying at Vellore Institute of Technology. My enthusiasm for technology drives me to constantly explore and innovate in the software development realm. Beyond coding, I am an avid tech enthusiast, always eager to learn about the latest advancements in the tech world. When I'm not immersed in my studies or working on projects, you'll find me trekking through nature, enjoying the thrill of discovering new trails and breathtaking landscapes. Welcome to my portfolio, where I showcase my journey and projects in the world of technology.</p>
+        </div>
+       <div style="padding-top: 10%;"><img src="images1.png" class="img"></div> 
+    </section>
+    <section class="edu">
+        <h2>Education</h2>
+        <div class="det">
+      <span><b>Schooling:</b>
+            <p>Narayana School
+                <br>Tirupathi</p>
+            <p style="color: tomato;">97% Aggregate</p></span>
+            <span><b>Higher Secondary Schooling:</b>
+                <p>Raju Junior college
+                    <br>Tirupathi</p>
+                <p style="color: tomato;">92% Aggregate</p>
+            </span>
+    <span><b>Present Graduate:</b>
+        <p>Vellore Institute of Technology<br>
+            Vellore</p>
+        <p style="color: tomato;">Cgpa : 9.1(present)</p></span>
+      </div>
+    </section>
+    <section class="skills" id="skill">
+        <h2>S<span>kill</span>s</h2>
+        <div class="dude">
+       <span><h3>Has Work Experience on Following Programming Languages:</h3>
+        <span class="sk">
+            <ul>
+                <li><img src="github (1).png" class=".sizes"><h5>Git Hub</h5></li>
+                <li><img src="python.png"><h5>Python</h5></li>
+                <li><img src="s.png"><h5>C/C++</h5></li>
+                <li><img src="java.png"><h5>Java</h5></li>
+                <li><img src="java-script.png"><h5>Java-Script</h5></li>
+            </ul></span>
+        </span>
+        <span class="code"><img src="code1.jpg"></span>
+        </div>
+        
+    </section>
+    <footer class="footer" id="foot">
+        <h4>For Any Queries Contact me </h4>
+        <a href="mailto:krishnakoushik59@gmail.com">Mail Me</a>;
+    </footer>
+   
+    
+</body>
+</html>
